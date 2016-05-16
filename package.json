@@ -27,6 +27,8 @@
   "homepage": "https://github.com/b3457m0d3/octopress-theme-generator#readme",
   "dependencies": {
     "co": "^4.6.0",
-    "co-prompt": "^1.0.0"
+    "co-prompt": "^1.0.0",
+    "command_input": "0.0.2",
+    "minimal-prompt": "^1.0.5"
   }
 }
