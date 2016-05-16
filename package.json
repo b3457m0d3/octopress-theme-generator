@@ -1,0 +1,28 @@
+{
+  "name": "octopress-theme-generator",
+  "version": "0.0.1",
+  "description": "create the basic structure of an octopress theme",
+  "main": "./index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b3457m0d3/octopress-theme-generator.git"
+  },
+  "keywords": [
+    "octopress",
+    "jekyll",
+    "theme",
+    "generator"
+  ],
+  "author": "b3457m0d3",
+  "license": "MIT",
+  "bin": {
+    "wham": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/b3457m0d3/octopress-theme-generator/issues"
+  },
+  "homepage": "https://github.com/b3457m0d3/octopress-theme-generator#readme"
+}
