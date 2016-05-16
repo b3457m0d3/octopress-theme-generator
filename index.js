@@ -3,7 +3,7 @@ console.log("fight!");
 var fs = require("fs");
 var prompt = require('minimal-prompt');
 
-prompt.question(['Theme Name', 'Theme Repo'], {
+prompt.question(['Theme Name'], {
     prompt: '>',
     delimiter: ':',
     formatPrompt: function(prompt, delim, name) {
@@ -11,8 +11,13 @@ prompt.question(['Theme Name', 'Theme Repo'], {
         return prompt + delim + ' ' + name + delim + ' ';
     },
     onComplete: function(results) {
-        console.log('Theme name:', results.themeName);
-        console.log('Theme repo:', results.themeRepo);
+        var themeName = results.themeName;
+        fs.mkdir('./'+themeName,0755,function(err){
+           if (err) {
+               return console.error(err);
+           }
+           console.log('Folder "'+themeName+'" created successfully');
+        });
     }
 });
 
